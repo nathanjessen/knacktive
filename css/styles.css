@@ -1,0 +1,189 @@
+/* CSS Document */
+
+/* ========== MISC ==============
+==================================== */
+html {
+	font-size: 62.5%;
+}
+body {
+	margin: 1em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+	background-color: #ffffff;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+a {
+  color: #0088cc;
+  text-decoration: none;
+}
+a:hover {
+  color: #005580;
+  text-decoration: underline;
+}
+.hidden {
+	display: none;
+}
+.hidden-text {
+	text-indent:-999em;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style:none;
+}
+
+/* ========== PAGE-HEADER ==============
+================================= */
+#page-header {
+	margin-bottom: 2em;
+}
+.logo {
+	display: block;
+	width: 292px;
+	height: 51px;
+	background: url(../img/knacktive-small.png) no-repeat;
+}
+	.logo a {
+		display: block;
+		width:260px;
+		height:51px;
+	}
+.tagline {
+	font-style:italic;
+	font-weight:normal;
+}
+
+#main-nav {
+	margin-top: 1em;
+}
+	#main-nav .nav-link {
+		float: right;
+		padding: 8px 18px;
+		background-color: #f7951e;
+		color: #FFF;
+		font-weight: bold;
+		text-transform:uppercase;
+		border-radius: 3px;
+		margin-left: 3px;
+	}
+	#main-nav .nav-link:hover {
+		background-color:#fdcc6e;
+	}
+
+/* ========== PAGE-CONTENT ==============
+================================= */
+
+.team-wrap h3 {
+	text-align: center;
+}
+.knack {
+	display:none;
+}
+#member1 {
+	display: inline;
+}
+#description {
+	padding: 10px;
+}
+#secondary-nav {
+	border: 1px solid #ddd;
+}
+	#secondary-nav > span {
+		display: block;
+		text-align:center;
+		padding: 7px 0;
+	}
+	.team-member {
+		cursor:pointer;
+		border-bottom: 1px solid #ddd;
+	}
+	.team-member:hover {
+		background: #f7951e;
+		color: #fff;
+	}
+
+/* ========== PAGE-FOOTER ==============
+================================= */
+#page-footer {
+	margin-top: 3em;
+	font-size: 0.8em;
+}
+	#page-footer h2 {
+		margin-bottom: 0.5em;
+	}
+.social {
+	vertical-align:top
+}
+	.social:before {
+		padding-right: 5px;
+	}
+	.facebook:before {
+		content:url(../img/facebook.png);
+	}
+	.email:before {
+		content:url(../img/email.png);
+	}
+	.twitter:before {
+		content:url(../img/twitter.png);
+	}
+
+/* ========== 960 GRID SYSTEM ==============
+================================= */
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_8 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+}
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8 {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/* Grid >> 8 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_8 .grid_1 { width:100px; }
+.container_8 .grid_2 { width:220px; }
+.container_8 .grid_3 { width:340px; }
+.container_8 .grid_4 { width:460px; }
+.container_8 .grid_5 { width:580px; }
+.container_8 .grid_6 { width:700px; }
+.container_8 .grid_7 { width:820px; }
+.container_8 .grid_8 { width:940px; }
+/* Prefix Extra Space >> 8 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_8 .prefix_1 { padding-left:120px; }
+/* Push Space >> 8 Columns
+----------------------------------------------------------------------------------------------------*/
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before, .clearfix:after {
+	content: '\0020';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
